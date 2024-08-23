@@ -4,6 +4,7 @@ import { AuroraBackground } from "@/shared/components/ui/aurora-background";
 import { FlipWords } from "@/shared/components/ui/flip-words";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 export function HomeHero() {
   const words = ["Soon", "Stylish", "Trendy", "Tasty", "Modern", "Savory"];
   return (
@@ -38,10 +39,11 @@ export function HomeHero() {
                 <FlipWords words={words} />
               </span>
             </div>
-
-            <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-              See more
-            </button>
+            <Link href="/details">
+              <button className="bg-black dark:bg-white active:bg-blue-500 rounded-full w-fit text-white dark:text-black px-4 py-2">
+                See more
+              </button>
+            </Link>
           </div>
           <div className="h-[150px] flex items-end">
             &copy; 2024 Food and Fashion Hub
