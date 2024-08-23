@@ -2,7 +2,7 @@
 
 import { AuroraBackground } from "@/shared/components/ui/aurora-background";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export function HomeHero() {
   return (
     <>
@@ -17,7 +17,15 @@ export function HomeHero() {
           }}
           className="relative  flex flex-col gap-4 items-center justify-center px-4"
         >
-          <div className="h-[100px]"></div>
+          <div className="h-[150px]">
+            <Image
+              src="/logo3.webp"
+              height={130}
+              width={130}
+              alt="logo"
+              className="rounded-full"
+            />
+          </div>
           <div className="flex items-center flex-col">
             <div className="text-3xl text-violet-500 md:text-7xl font-bold dark:text-white text-center">
               Food and Fashion Hub
@@ -29,7 +37,7 @@ export function HomeHero() {
               See more
             </button>
           </div>
-          <div className="h-[200px] flex items-end">
+          <div className="h-[150px] flex items-end">
             &copy; Food and Fashion Hub
           </div>
         </motion.div>
