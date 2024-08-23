@@ -32,7 +32,7 @@ export function HomeHero() {
             <div className="text-3xl text-violet-500 md:text-7xl font-bold dark:text-white text-center">
               Food and Fashion Hub
             </div>
-            <div className="text-3xl flex font-bold md:text-4xl dark:text-neutral-200 py-4">
+            <div className="text-2xl flex font-bold md:text-4xl dark:text-neutral-200 py-4">
               Coming
               <span className=" w-[100px]">
                 <FlipWords words={words} />
