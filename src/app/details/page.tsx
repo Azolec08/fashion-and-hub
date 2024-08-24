@@ -40,7 +40,7 @@ const TracingBeamDemo = () => {
       image: "/image2.jpg",
     },
     {
-      title: "Shoppee",
+      title: "Shopee",
       description: (
         <>
           <p>
